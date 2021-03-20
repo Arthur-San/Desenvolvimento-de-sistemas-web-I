@@ -1,0 +1,225 @@
+@charset 'utf-8';
+
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box; /*Ajustar o elemento do filho sem alterar o paddin do pai*/
+    text-decoration: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: blueviolet;
+}
+
+ul{
+    list-style: none;
+}
+
+
+
+/****TOPO****/
+
+#id_topo{
+    background-color: #212121;
+    font-size: 0.9em;
+    width: 100%;
+    display: flex; 
+    justify-content: space-between;
+    float: left;
+    position: fixed;
+}
+#id_topo div h2{
+    margin: 10px 20px 10px 20px;
+    font-size: 3em;
+    color: #888;
+}
+#id_topo div button{
+    width: 50px;
+    height: 35px;
+    font-size: 1.5em;
+    color: white;
+    border: solid 0.1px white;
+    background-color: black;
+    opacity: 0.7;
+    justify-content: space-around;
+    border-radius: 6px;
+    margin: 20px 15px 0px 0px;
+    display: flex;
+   align-items: center;
+}
+
+
+
+
+/****CORPO****/
+
+#id_corpo{
+    background-color: white;
+    width: 100%;
+    padding: 30px 30px;
+    font-size: 1em;
+    text-align: justify;
+}
+#id_principal{
+    width: auto;
+    height: max-content;
+}
+
+#id_banner{
+    background-color: royalblue;
+    width: auto;
+    height: 200px;
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0px 0px 20px 0px ;
+    
+}
+#id_banner h1 {
+    font-size: 2.5em;
+    text-align: center;
+    color: #EBD0AD;    
+    text-shadow: 2px 2px 5px #000;
+}
+#id_banner p{
+    font-size: 1.3em;   
+    text-align: center;
+    font-weight: bold;
+    padding-top: 10px;
+    color: #EBD0AD;    
+    text-shadow: 2px 2px 5px #000;
+    
+}
+
+
+#imagens{
+    background-color: darkmagenta;
+    margin-bottom: 20px;
+}
+
+#image_gallery p{
+    margin-bottom: 10px;
+}
+
+.containers{
+    border: solid 1px #e2eaf3;
+    padding: 20px;
+    margin: 0px 0px 5px -20px;
+    font-size: 1.3em;
+}
+
+span h3{
+    font-size: 1.6em;
+}
+
+section h2{
+    font-size: 2em;
+}
+
+
+
+
+
+
+/****RODAPE****/
+
+#formulario{
+    background-color: #9B9C97;
+    width: auto;
+    font-size: 1.2em;
+    display: flex;
+}
+#formulario h2{
+    margin: 0px 0px 10px 0px;
+    color: #393632;
+}
+#formulario section{
+    width: 80%;
+    margin-left:30px ;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+}
+#formulario section input{
+    width: auto;
+    height: 40px;
+    margin: 1px 1px 1px 1px ;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border: none;
+}
+
+#formulario section button{
+    width: auto;
+    height: 60px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #666D77;
+    background-color: #B8B8B8;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 1px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border: none
+}
+
+#formulario section input::placeholder{
+    padding: 20px;
+    font-size: 1.2em;
+}
+
+
+
+
+
+/**************  TAMANHOS DE TELA  ******************/
+
+@media screen and (min-width:480px){
+    *{
+        color: blueviolet;
+    }
+    #id_topo{
+        font-size: 1.2em;
+        height: 100px;
+    }
+    #id_topo div h2{
+        margin: 10px 20px 10px 40px;
+    }
+    #id_topo div button{
+        width: 70px;
+        height: 55px;
+        font-size: 1.7em;
+        margin: 25px 25px 0px 0px;
+    }
+
+}
+
+
+
+
+
+
+@media screen and (min-width:780px){
+    *{
+        color: chartreuse;
+    }
+}
+
+
+
+
+
+
+@media screen and (min-width:1024px){
+    *{
+        color: darkcyan;
+    }
+}

@@ -1,0 +1,136 @@
+@charset 'utf-8';
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+#principal{
+    background-color: cadetblue;
+    width: 100%;
+    height: 300%;
+    position: absolute;
+}
+
+.tela{
+    width: 100%;
+    height: 33.3333333%;
+    ;
+}
+
+#tela1{
+    background-color: chocolate;
+}
+#topo{
+    background-color: #a1d091;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+#menu_superior{
+    background-color: #4472C4;
+    width: 55%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+#menu_superior ul{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 70%;
+    list-style: none;
+    justify-content: space-around;
+    font-family: sans-serif;
+    font-size: 3vh;
+    font-weight: bold;
+    color: #8EB99A;
+    text-shadow: 1px 1px 5px #000;
+    text-decoration: none;
+}
+#menu_superior ul a{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 3vh;
+    font-weight: bold;
+    color: #8EB99A;
+    text-shadow: 1px 1px 5px #000;
+}
+
+
+#conteudo_tela1{
+    background-color: #00B050;
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#conteudo_tela1 figure{
+    background-color: #4472C4;
+    width: 80%;
+    height: 55%;
+}
+#conteudo_tela1 div{
+    background-color: #4472C4;
+    width: 70%;
+    height: 20%;
+}
+
+
+
+
+#tela2,#tela3{
+    display: flex;
+}
+
+#tela2{
+    background-color: #2E75B5;
+}
+.divisoria{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#esquerdo_tela2 figure,#direito_tela2 figure{
+    background-color: #FFC000;
+    width: 70%;
+    height: 50%;
+}
+
+#esquerdo_tela2 div,#direito_tela2 div{
+    background-color: #FFC000;
+    width: 60%;
+    height: 15%;
+}
+
+
+
+
+
+#tela3{
+    background-color: #3a3838;
+}
+#esquerdo_tela3 figure{
+    background-color: #F2F2F2;
+    width: 90%;
+    height: 90%;
+}
+
+#direito_tela3 div{
+    background-color: #F2F2F2;
+    width: 80%;
+    height: 15%;
+}

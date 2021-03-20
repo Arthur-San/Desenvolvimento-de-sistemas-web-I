@@ -1,0 +1,178 @@
+@charset 'utf-8';
+
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/*Aplicando uma sonmbra em todos os figure`s e div`s de uma só vez*/
+figure,div{
+    box-shadow: 1px 1px 5px #000;
+}
+
+#principal{
+    background-color: brown;
+    width: 100%;
+    height: 300%;
+    position: absolute;
+}
+.tela{
+    width: 100%;
+    height: 33.3333%;
+}
+#tela1{
+    background-color: aquamarine;
+}
+#topo{
+    background-color: #ffa500;/* Modandoa acor do topo */
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+#menu_superior{
+    background-color: white;/*Mudadando a cor do nav#menu_superior*/
+    width: 55%;
+    height: 60%;/*Aumentando a altura do nav#menu_superior*/
+    display: flex;
+    justify-content: center;
+    border-top-left-radius: 20vh;/*Arredondando a borda superior esquerda do nav#menu_superior*/
+    box-shadow: 1px 1px 50px white;/*Aplicando uma sombra branca no nav#menu_superior*/
+}
+#menu_superior ul{
+    display: flex;
+    width: 70%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+#menu_superior ul a, h1{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 4vh;/*Mudando a fonte do menu para 4vh*/
+    color: #ffa500;/*Mudando a cor dos links do menu*/
+    text-shadow: 1px 1px 2px #000;
+    text-decoration: none;
+}
+
+#conteudo_tela1{
+    background-color: white;/*Mudando a cor do fundo para branco*/
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#conteudo_tela1 figure{
+    background-image: url(../img/img1.png);/*Colocando uma imagem de fundo no figure de dentro do #conteudo_tela1*/
+    background-position: center;/*Alinhando a imagem de fundo no centro do container(figure)*/
+    background-repeat: no-repeat;/*Impededindo que a imagem se repita caso o container onde ela estiver aumente a ponte de ser maior que a imagem*/
+    background-size: cover;/*Definindo o tamanho da image de fundo*/
+    
+    background-color: bisque;
+    width: 80%;
+    height: 50%;
+}
+
+
+#conteudo_tela1 div{
+    width: 75%;/*Aumentando a largura da div para melhor distribuir o texto*/
+    height: 40%;/*Aumentando a altura para melhor distribuir o texto*/
+    box-shadow: none;/*Como no início desse arquivo css foi feita uma configuração de sombra em todas as div`s e figure`s, tive que aplicar essa configuração para tirar a sombra que havia aparecido por conta da configuração anterior, pois essa é transparente e sem sombra*/
+}
+
+#conteudo_tela1 div p{/*Chamada css para formatar os parágrafos que estão dentro da div que está dentro do #conteudo_tela1*/
+    text-align: center;/*Alinhando os parágrafos ao centro horizontalmente*/
+    margin: 0% 2%;/*Aplicando uma margem de 0% encima e embaixo e 2% esquerda e direita*/
+    font-size: 2.5vh;/*Alterando o tamanho da fonte para 2.5vh lembrando que a unidade de medida vh serve para que o texto se orne fluído alternando seu tamanho conforme o tamanho da tela*/
+    font-family: sans-serif;/*Alterando o tipo de fonte*/
+    color: #555;/*Colocando uma cor no texto*/
+}
+#conteudo_tela1 div h1{/*Aplicando uma configuração no h1 que está dentro da div que está dentro do #conteudo_tela1*/
+    text-align: center;/*Alinhando o texto no centro*/
+}
+
+
+#tela2{
+    background-color: #ffa500;/*Alterando a cor de fundo do #tele2*/
+    display: flex;
+}
+.divisoria{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#esquerdo1 figure, #direito1 figure{
+    background-color: darkorange;
+    width: 70%;
+    height: 50%
+}
+#esquerdo1 figure{/*Aplicando uma imagem de fundo apenas na fugure do #esquerdo1*/
+    background-image: url(../img/img2.png);/*Colocando uma imagem de fundo no figure de dentro do #esquerdo1*/
+    background-position: center;/*Colocando uma imagem de fundo no figure de dentro do #esquerdo1*/
+    background-repeat: no-repeat;/*Impededindo que a imagem se repita caso o container onde ela estiver aumente a ponte de ser maior que a imagem*/
+    background-size: cover;/*Definindo o tamanho da image de fundo*/
+}
+
+#direito1 figure{/*Aplicando uma imagem de fundo apenas na fugure do #direito1*/
+    background-image: url(../img/img3.png);/*Colocando uma imagem de fundo no figure de dentro do #direito1*/
+    background-position: center;/*Colocando uma imagem de fundo no figure de dentro do #direito1*/
+    background-repeat: no-repeat;/*Impededindo que a imagem se repita caso o container onde ela estiver aumente a ponte de ser maior que a imagem*/
+    background-size: cover;/*Definindo o tamanho da image de fundo*/
+}
+
+#esquerdo1 div, #direito1 div{
+    background-color: white;/*Mudando a cor do fundo da div tanto #esquerdo1 quanto do #direito1*/
+    width: 60%;/*Alterando a largura das div`s tanto do #esquerdo1, quanto do #direito1*/
+    height: 15%;
+    font-size: 6vh;/*Alterando o tamanho da fonte para 6vh lembrando que a unidade de medida vh serve para que o texto se orne fluído alternando seu tamanho conforme o tamanho da tela*/
+    font-family: sans-serif;/*Muda a fonte*/
+    font-weight: bold;/*Coloca em negrito*/
+    text-shadow: 1px 1px 2px #000;/*Aplica uma sombra no texto*/
+    color: #ffa500;/*Muda a cor da fonte*/
+    display: flex;/*Ativa o flexbox, ou seja, faz com que as div`s fiquem flexíveis*/ 
+    align-items: center;/*Alinha os elementos filhos no centro verticalmente*/
+    justify-content: center;/*Alinha os elementos filhos no centro horizontalmente*/
+}
+#tela3{
+    background-color: white;/*Alterando a fundo da #tela3 para branco*/
+    display: flex;
+}
+#esquerdo2 figure{
+    background-color: darkorange;
+    width: 90%;
+    height: 90%;
+    display: flex;/*Ativa o flexbox, ou seja, faz com que a figure se torne flexível*/ /*Alinha os elementos filhos no centro verticalmente*/
+    align-items: center;/*Alinha os elementos filhos no centro verticalmente*/
+    justify-content: center;/*Alinha os elementos filhos no centro horizontalmente*/
+}
+#esquerdo2 figure iframe{/*Aplica uma configuração no iframe do mapa*/
+    width: 98%;/*Altera a largura do iframe*/
+    height: 98%;/*Altera a altura do iframe*/
+}
+#direito2 div{
+    background-color: darkorange;
+    width: 90%;
+    height: 15%;
+    display: flex;/*Ativa o flexbox, ou seja, faz com que a div se torne flexível*/
+    align-items: center;/*Alinha os elementos filhos no centro verticalmente*/
+}
+#direito2 div p{/*Aplicando uma configuração aos parágrafos de dentro das div`s que estão dentro do container #direito2*/
+    text-align: center;/**/
+    margin: 0 2%;/*Aplicando uma margem de 0% encima e embaixo e 2% esquerda e direita*/
+    font-family: sans-serif;/*Muda o tipo da fonte*/
+    line-height: 130%;/*Altera a altura das linhas, espaçando-as*/
+    font-size: 2.3vh;/*Alterando o tamanho da fonte para 2.3vh lembrando que a unidade de medida vh serve para que o texto se orne fluído alternando seu tamanho conforme o tamanho da tela*/
+    color: #595959;/*Mudando a cor dos textos dos parágrafos*/
+}
+
+

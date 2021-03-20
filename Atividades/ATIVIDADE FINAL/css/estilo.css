@@ -1,0 +1,216 @@
+@charset 'utf-8';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{ 
+    scroll-behavior: smooth;
+    transition: 0.2s;
+}
+
+
+/********************TOPO********************/
+#modal_pai{
+    width: 85%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0,0);
+    top: 0;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+#fechar{
+    float: right;
+    padding: 15px 20px;
+    text-decoration: none;
+    background-color: black;
+}
+
+#modal{
+    width: 55%;
+    height: 55%;
+    background-color: white;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: -500px;
+    box-shadow: 2px 2px 20px #000;
+    transition: 0.5s;
+    text-align: center;
+    color: orange;
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px black;
+    padding-bottom: 80px;
+     
+}
+#modal h2{
+    margin: 0 0 10px 30px;
+    padding-top: 20px;
+}
+#modal form{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    justify-content: space-around;
+}
+#modal label{
+    width: 300px;
+    display: flex;
+}
+#modal span{
+    margin-right: 31px;
+}
+
+#modal #fone{
+    margin-right: 13px;
+}
+
+#modal p{
+    margin-bottom: 0;
+}
+
+#msg span{
+    margin-left: 110px;    
+}
+
+textarea{
+    margin-bottom: 20px;
+}
+
+#modal input{
+    width: 200px;
+}
+
+#modal #mensagem{
+    width:260px;
+    height: 80px;
+}
+#modal .btn{
+    width: 130px;
+    background-color: orange;
+    color:white;  
+}
+
+
+
+
+
+
+/********************CORPO********************/
+
+body{
+    width: 85%;
+    margin: auto;  
+    background-image: url(../img/fundo.png);
+    
+}
+
+.header-dark, .article-list, .article-dual-column{
+    background-color: beige;
+    font-weight: 700;
+}
+
+.header-dark .hero h1{
+    color: black;
+    font-weight: 700;
+}
+#principal{
+    background-color: beige;
+    position: relative;
+    z-index: 1;
+}
+
+#logo{
+    width: 12%;
+    margin-right: 80px;
+}
+
+.carousel{
+    margin: 30px 0;
+}
+
+.header-dark .navbar .navbar-brand{
+    color: black;
+}
+
+.nav-item:hover{
+    background-color: black;
+}
+.nav-link:hover{
+    color: yellow !important;
+}
+
+.img-fluid, .carousel-inner{
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px black;
+}
+
+.titulos {
+    font-size: 3em !important;
+}
+
+
+
+
+/********************RODAPÉ********************/
+
+@media screen and (max-width: 760px){
+    #modal{
+        width: 85%;
+    }
+
+    #modal span{
+        margin-left: 10px;
+    }
+
+    #modal input{
+        width: 180px;
+    }
+
+    #modal #mensagem{
+        height: 70px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    #fechar{
+        padding: 10px 15px;
+    }
+    #modal{
+        width: 85%;
+        height: 65%;
+    }
+
+    #modal img{
+        width: 15px; 
+    }
+
+    #modal span{
+        margin-left: 50px;
+        margin-right: 28px;
+    }
+
+    #modal input{
+        width: 120px;
+    }
+
+    #modal #fone{
+        margin-right: 10px;
+    }
+
+    #modal #mensagem{
+        width: 200px;
+        height: 60px;
+    }
+
+    #modal .btn {
+        width: 100px;
+    }
+
+}

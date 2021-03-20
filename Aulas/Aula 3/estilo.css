@@ -1,0 +1,46 @@
+/*Arquivo de CSS*/
+
+body{
+  background-color: #000;
+  color: #000;
+  font-family: 'Bangers', cursive;
+  font-size: 15px;
+}
+
+section{
+  width: 95%;
+  margin: auto;
+}
+
+header{
+  width: 100%;
+  background-color: #ffd701;
+  height: 200px;
+}
+
+nav{
+  width: 100%;
+  background-color: #ffff00;
+  height: 50px;
+}
+
+aside{
+  width: 30%;
+  background-color: #f0e68c;
+  height: 450px;
+  float: left;
+}
+
+article{
+  width: 70%;
+  background-color: #fff;
+  height: 450px;
+  float: right;
+}
+
+footer{
+  width: 100%;
+  background-color: #ffff00;
+  height: 50px;
+  clear: both;
+}

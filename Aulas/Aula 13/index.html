@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Atividade 8</h1>
+    <hr>
+    <h2>Entendendo os comandos e tags HTML5</h2>
+    <hr>
+
+    <p>
+        O HTML5 assim como qualquer outra linguagem ao ser atualizada, além de receber
+        novo comandos, aposenta outros. Dessa forma, você pode acompanhar no artigo
+        abaixo, as tags que permanecem em uso no HTML5 e as tags que foram
+        descontinuadas e só servem para as versões anteriores.
+    </p>
+    <hr>
+
+    <h3>Tags semanticas</h3>
+    <ul>
+        <li>header</li>
+        <li>section</li>
+        <li>article</li>
+        <li>nav</li>
+        <li>aside</li>
+        <li>main</li>
+        <li>figure</li>
+        <li>footer</li>
+        <li>a</li>
+        <li>em</li>
+        <li>strong</li>
+        <li>cite</li>
+        <li>q</li>
+        <li>time</li>
+    </ul>
+
+    <hr>
+    <h3>Containers</h3><br>
+    <div id="id_container"></div>
+    <hr>
+
+    <h3>Formulário</h3>
+    <hr>
+    <fieldset>
+
+        <legend>Cadastro de usuário</legend>
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            Nome <input type="text" name="n_nome" id="id_nome" placeholder="Digite o nome"><br><br>
+            Idade <input type="number" name="n_idade" id="id_idade" placeholder="Digite a sua idade">
+            <fieldset>
+                <legend>Sexo</legend>
+                <input type="radio" name="n_sexo">Masculino <br>
+                <input type="radio" name="n_sexo">Feminino
+            </fieldset> <br>
+
+            Data de nascimento <input type="date" name="n_date" id="id_date">
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados profissionais</legend>
+            Conhecimentos profissionais <br>
+            <input type="checkbox" name="n_dados_profissionais" id="id_dados_profissionais">TI <br>
+            <input type="checkbox" name="n_dados_profissionais" id="id_dados_profissionais">Gestão de projetos <br>
+            <input type="checkbox" name="n_dados_profissionais" id="id_dados_profissionais">Infraestrutura <br>
+
+            Informe aqui as 3 últimas empresas onde trabalhou <br>
+            <textarea name="n_empresas_trabalhou" id="id_empresas_trabalhou" cols="100" rows="5"
+                placeholder="Trabalhei no..."></textarea>
+
+            <br>
+            Enviar currículo
+            <br>
+            <input type="file" name="n_curriculo" id="id_curriculo">
+        </fieldset>
+
+        <fieldset>
+            <legend>Login</legend>
+            usuário <input type="text" name="n_login_nome" id="id_login_nome" placeholder="Digite o seu nome">
+            Senha <input type="password" name="n_login_senha" id="id_login_senha" placeholder="Digite a sua senha">
+            <input type="button" value="Entrar">
+        </fieldset>
+
+    </fieldset>
+
+    <br>
+    <input type="submit" value="Cadastrar">
+    <input type="submit" value="Limpar">
+    <hr>
+
+    <h3>Vídeo</h3>
+    <hr>
+    <video controls autoplay muted width="300" src="video/Prompto - Ed Edd n Eddy.mp4"></video>
+    <hr>
+
+    <audio controls src="audio/Mr.Kitty - After Dark.mp3"></audio>
+    <hr>
+
+    <h3>Mapa</h3>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3458.616461636198!2d-51.178142799999996!3d-29.9041501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95197aa082c34d17%3A0x9f37f87b90b37665!2sQI%20Faculdade%20%26%20Escola%20T%C3%A9cnica%20%7C%20Canoas!5e0!3m2!1spt-BR!2sbr!4v1596582867635!5m2!1spt-BR!2sbr"
+        width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe>
+    <hr>
+
+    <h2>A regra CSS e sua sintaxe</h2>
+    <p>
+        A regra CSS e sua sintaxe
+        Uma regra CSS é uma declaração que segue uma sintaxe própria e que define como
+        será aplicado estilo a um ou mais elementos HTML.
+        Um conjunto de regras CSS formam uma Folha de Estilos.
+        Uma regra CSS, na sua forma mais elementar, compõe-se de três partes:
+        um seletor; uma propriedade; e um valor. e tem a sintaxe conforme mostrado abaixo:
+        seletor { propriedade: valor; } Seletor: é o <strong>elemento HTML</strong> (ou uma classe a aplicar a um
+        elemento HTML) para o qual a regra será; válida. Propriedade: é o atributo do elemento HTML ao qual será aplicada a regra (por
+        exemplo: font, color, background, etc...). Valor: é a característica específica a ser assumida pela propriedade
+        (por exemplo: letra tipo arial, cor azul, fundo verde, etc...) Na sintaxe de uma <em>regra</em> CSS escreve-se o seletor e a seguir
+        a propriedade e valor separados por dois pontos e entre chaves { }. Quando mais de uma propriedade for definida na regra, deve-se usar
+        ponto-e-vírgula para separá-las. O ponto-e-vírgula é facultativo no caso de propriedade única e também após a
+        declaração da última propriedade no caso de mais de uma.
+    </p>
+    <hr>
+
+</body>
+
+</html>

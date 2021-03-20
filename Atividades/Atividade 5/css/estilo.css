@@ -1,0 +1,179 @@
+@charset 'utf-8'; /* Define a codificação da folha de estilo para Unicode UTF-8 */
+
+*{ /*Atribui uma formatação css a todos os elementos html*/
+    padding: 0;
+    margin: 0;
+}
+html{ /*aplica uma formatação css na tag html no arquivo html*/
+    scroll-behavior: smooth;
+}
+
+/*Aplicando uma sombra em todos os figure`s e div`s de uma só vez*/
+figure,div{ /*Aplica formatação em todas as tags figure e div*/
+    box-shadow: 1px 1px 5px #000;/*Aplicando uma sombra preta no container com um
+    deslocamento direito de 1 pixel, abaixo 1 pixel e uma distancia da superfície de 5
+    pixel*/
+}
+
+#principal{ /*aplica uma formatação css na ID "principal" no arquivo html*/
+    background-color: brown; /*aplica uma fundo da cor da cor "brown"*/
+    width: 100%; /*aplica uma largura ao elemento de escolha*/
+    height: 300%; /*aplica uma altura ao elemento de escolha*/
+    position: absolute; /*a posição do elemento em que a ID é colocada deixa de pertencer ao BODY e começa a participar do navegador*/
+}
+.tela{ /*Aplica uma formatação css a CLASSE "tela" no html*/
+    width: 100%; /*aplica uma largura ao elemento de escolha*/
+    height: 33.3333%; /*aplica uma altura ao elemento de escolha*/
+}
+#tela1{ /*aplica uma formatação css na ID "tela1" no arquivo html*/
+    background-color: aquamarine; /*aplica uma fundo da cor de escolha*/
+}
+#topo{ /*aplica uma formatação css na ID "topo" no arquivo html*/
+    background-color: #ffa500;/*aplica uma fundo da cor "#ffa500"*/
+    width: 100%; /*aplica uma largura ao elemento de escolha*/
+    height: 15%; /*aplica uma altura ao elemento de escolha*/
+    display: flex;/*permite que os elementos dentro de um contêiner sejam organizados automaticamente*/
+    align-items: flex-end; /*align-items alinha um certo item dentro do bloco que o contém, e flex-end posiciona itens-flex a no fim */
+    justify-content: flex-end; /*justify-content define como o navegador distribui espaço ao redor de itens, flex-end posiciona itens-flex a no fim*/
+}
+#menu_superior{/*aplica uma formatação css na ID "menu_superior" no arquivo html*/
+    background-color: white;/*aplica uma fundo da cor "#white"*/
+    width: 55%; /*aplica uma largura ao elemento de escolha*/
+    height: 60%;/*Aumentando a altura do nav#menu_superior*/
+    display: flex; /*display permite controlar a renderização de elementos gráficos ou de contêiner, flex faz com que o elemento aplicado seja um flex container*/
+    justify-content: center; /*justify-content define como o navegador distribui espaço ao redor de itens, center alinha o item no centro*/
+    border-top-left-radius: 20vh;/*Arredondando a borda superior esquerda do nav#menu_superior*/
+    box-shadow: 1px 1px 50px white;/*Aplicando uma sombra branca no nav#menu_superior*/
+}
+#menu_superior ul{ /*aplica uma formatação css na tag "ul" no ID "menu_superior" no arquivo html*/
+    display: flex; /*display permite controlar a renderização de elementos gráficos ou de contêiner, flex faz com que o elemento aplicado seja um flex container*/
+    width: 70%; /*aplica uma largura ao elemento de escolha*/
+    height: 100%; /*Aumentando a altura do nav#menu_superior*/
+    align-items: center; /*align-items alinha um certo item dentro do bloco que o contém, center alinha o item no centro*/
+    justify-content: space-around; /*justify-content define como o navegador distribui espaço ao redor de itens, space-around distribuí entre os elementos um espaço*/
+    list-style: none; /*list-style propriedades de estilo de lista, none nada*/
+}
+#menu_superior ul a, h1{ /*aplica uma formatação css na tag "a" que pertence a tag "ul" do ID "menu_superior" e também a todas as tags h1 no arquivo html*/
+    font-family: sans-serif;/*font-family permite a alteração da fonte da letra, sans-serif é um estilo de fonte*/
+    font-weight: bold; /*aplica um negrito ao texto*/
+    font-size: 4vh;/*Mudando a fonte do menu para 4vh*/
+    color: #ffa500;/*Mudando a cor dos links do menu*/
+    text-shadow: 1px 1px 2px #000; /*Aplicando uma sombra preta no #menu_superior ul a e a todas tags h1*/
+    text-decoration: none; /*retira o underline*/
+}
+
+#conteudo_tela1{ /*aplica uma formatação css na ID "conteudo_tela1" no arquivo html*/
+    background-color: white;/*Mudando a cor do fundo para branco*/
+    width: 100%; /*aplica uma largura ao elemento de escolha*/
+    height: 85%; /*Aumentando a altura do nav#menu_superior*/
+    display: flex; /*display permite controlar a renderização de elementos gráficos ou de contêiner, flex faz com que o elemento aplicado seja um flex container*/
+    flex-direction: column; /*inverte o sentido dos itens deixando-os em coluna*/
+    align-items: center; /*align-items alinha um certo item dentro do bloco que o contém, center alinha o item no centro*/
+    justify-content: space-around; /*justify-content define como o navegador distribui espaço ao redor de itens, space-around distribuí entre os elementos um espaço*/
+}
+#conteudo_tela1 figure{ /*aplica uma formatação css tag figure que pertence a ID "conteudo_tela1" no arquivo html*/
+    background-image: url(../img/img1.png);/*Colocando uma imagem de fundo no figure de dentro do #conteudo_tela1*/
+    background-position: center;/*Alinhando a imagem de fundo no centro do container(figure)*/
+    background-repeat: no-repeat;/*Impededindo que a imagem se repita caso o container onde ela estiver aumente a ponte de ser maior que a imagem*/
+    background-size: cover;/*Definindo o tamanho da image de fundo*/    
+    background-color: bisque; /*aplica uma cor de fundo "bisque"*/
+    width: 80%; /*aplica uma largura ao elemento de escolha*/
+    height: 50%; /*Aumentando a altura do nav#menu_superior*/
+}
+
+
+#conteudo_tela1 div{ /*aplica uma formatação css tag div que pertence a ID "conteudo_tela1" no arquivo html*/
+    width: 75%;/*Aumentando a largura da div para melhor distribuir o texto*/
+    height: 40%;/*Aumentando a altura para melhor distribuir o texto*/
+    box-shadow: none;/*Como no início desse arquivo css foi feita uma configuração de sombra em todas as div`s e figure`s, tive que aplicar essa configuração para tirar a sombra que havia aparecido por conta da configuração anterior, pois essa é transparente e sem sombra*/
+}
+
+#conteudo_tela1 div p{/*Chamada css para formatar os parágrafos que estão dentro da div que está dentro do #conteudo_tela1*/
+    text-align: center;/*Alinhando os parágrafos ao centro horizontalmente*/
+    margin: 0% 2%;/*Aplicando uma margem de 0% encima e embaixo e 2% esquerda e direita*/
+    font-size: 2.5vh;/*Alterando o tamanho da fonte para 2.5vh lembrando que a unidade de medida vh serve para que o texto se orne fluído alternando seu tamanho conforme o tamanho da tela*/
+    font-family: sans-serif;/*Alterando o tipo de fonte*/
+    color: #555;/*Colocando uma cor no texto*/
+}
+#conteudo_tela1 div h1{/*Aplicando uma configuração no h1 que está dentro da div que está dentro do #conteudo_tela1*/
+    text-align: center;/*Alinhando o texto no centro*/
+}
+
+
+#tela2{ /*aplica uma formatação css a ID "tela2"*/
+    background-color: #ffa500;/*Alterando a cor de fundo do #tele2*/
+    display: flex; /*display permite controlar a renderização de elementos gráficos ou de contêiner, flex faz com que o elemento aplicado seja um flex container*/
+}
+.divisoria{ /*Aplica uma formatação css a CLASSE "divisoria" no html*/
+    width: 50%; /*Aumentando a largura da div para melhor distribuir o texto*/
+    height: 100%; /*Aumentando a altura para melhor distribuir o texto*/
+    display: flex; /*display permite controlar a renderização de elementos gráficos ou de contêiner, flex faz com que o elemento aplicado seja um flex container*/
+    flex-direction: column; /*inverte o sentido dos itens deixando-os em coluna*/
+    justify-content: space-around; /*justify-content define como o navegador distribui espaço ao redor de itens, space-around distribuí entre os elementos um espaço*/
+    align-items: center; /*align-items alinha um certo item dentro do bloco que o contém, center alinha o item no centro*/
+}
+#esquerdo1 figure, #direito1 figure{ /*aplica formatação css as tags figure pertencentes aos IDs "esquerdo1 e direito1*/
+    background-color: darkorange; /*aplica uma cor de fundo "darkorange"*/
+    width: 70%; /*Aumentando a largura da div para melhor distribuir o texto*/
+    height: 50%; /*Aumentando a altura para melhor distribuir o texto*/
+}
+#esquerdo1 figure{/*Aplicando uma imagem de fundo apenas na fugure do #esquerdo1*/
+    background-image: url(../img/img2.png);/*Colocando uma imagem de fundo no figure de dentro do #esquerdo1*/
+    background-position: center;/*Colocando uma imagem de fundo no figure de dentro do #esquerdo1*/
+    background-repeat: no-repeat;/*Impededindo que a imagem se repita caso o container onde ela estiver aumente a ponte de ser maior que a imagem*/
+    background-size: cover;/*Definindo o tamanho da image de fundo*/
+}
+
+#direito1 figure{/*Aplicando uma imagem de fundo apenas na fugure do "direito1"*/
+    background-image: url(../img/img3.png);/*Colocando uma imagem de fundo no figure de dentro do "direito1"*/
+    background-position: center;/*Colocando uma imagem de fundo no figure de dentro do #direito1*/
+    background-repeat: no-repeat;/*Impededindo que a imagem se repita caso o container onde ela estiver aumente a ponte de ser maior que a imagem*/
+    background-size: cover;/*Definindo o tamanho da image de fundo*/
+}
+
+#esquerdo1 div, #direito1 div{ /*aplica formatação css as tags div pertencentes aos IDs "esquerdo1" e "direito1"*/
+    background-color: white;/*Mudando a cor do fundo da div tanto #esquerdo1 quanto do #direito1*/
+    width: 60%;/*Alterando a largura das div`s tanto do #esquerdo1, quanto do #direito1*/
+    height: 15%; /*Alterando a altura das div`s tanto do #esquerdo1, quanto do #direito1*/
+    font-size: 6vh;/*Alterando o tamanho da fonte para 6vh lembrando que a unidade de medida vh serve para que o texto se orne fluído alternando seu tamanho conforme o tamanho da tela*/
+    font-family: sans-serif;/*Muda a fonte*/
+    font-weight: bold;/*Coloca em negrito*/
+    text-shadow: 1px 1px 2px #000;/*Aplica uma sombra no texto*/
+    color: #ffa500;/*Muda a cor da fonte*/
+    display: flex;/*Ativa o flexbox, ou seja, faz com que as div`s fiquem flexíveis*/ 
+    align-items: center;/*Alinha os elementos filhos no centro verticalmente*/
+    justify-content: center;/*Alinha os elementos filhos no centro horizontalmente*/
+}
+#tela3{ /*aplica uma formatação css ao ID "tela3"*/
+    background-color: white;/*Alterando a fundo da #tela3 para branco*/
+    display: flex; /*display permite controlar a renderização de elementos gráficos ou de contêiner, flex faz com que o elemento aplicado seja um flex container*/
+}
+#esquerdo2 figure{ /*aplica uma formatação css a tag figure que pertence ao ID "esquerdo2"*/
+    background-color: darkorange;
+    width: 90%; /*Aumentando a largura para melhor distribuir o texto*/
+    height: 90%; /*Aumentando a altura para melhor distribuir o texto*/
+    display: flex;/*Ativa o flexbox, ou seja, faz com que a figure se torne flexível*/ /*Alinha os elementos filhos no centro verticalmente*/
+    align-items: center;/*Alinha os elementos filhos no centro verticalmente*/
+    justify-content: center;/*Alinha os elementos filhos no centro horizontalmente*/
+}
+#esquerdo2 figure iframe{/*Aplica uma configuração no iframe do mapa*/
+    width: 98%;/*Altera a largura do iframe*/
+    height: 98%;/*Altera a altura do iframe*/
+}
+#direito2 div{ /*Aplica uma formatação css a tag div pertencente ao ID "direito2"*/
+    background-color: darkorange;
+    width: 90%; /*Altera a largura*/
+    height: 15%; /*Altera a altura*/
+    display: flex;/*Ativa o flexbox, ou seja, faz com que a div se torne flexível*/
+    align-items: center;/*Alinha os elementos filhos no centro verticalmente*/
+}
+#direito2 div p{/*Aplicando uma configuração aos parágrafos de dentro das div`s que estão dentro do container #direito2*/
+    text-align: center;/**/
+    margin: 0 2%;/*Aplicando uma margem de 0% encima e embaixo e 2% esquerda e direita*/
+    font-family: sans-serif;/*Muda o tipo da fonte*/
+    line-height: 130%;/*Altera a altura das linhas, espaçando-as*/
+    font-size: 2.3vh;/*Alterando o tamanho da fonte para 2.3vh lembrando que a unidade de medida vh serve para que o texto se orne fluído alternando seu tamanho conforme o tamanho da tela*/
+    color: #595959;/*Mudando a cor dos textos dos parágrafos*/
+}
+
+

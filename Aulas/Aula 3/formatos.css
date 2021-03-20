@@ -1,0 +1,44 @@
+/*Seletor de classe*/
+
+.texto{
+  font-family: 'Fondamento', cursive;
+  font-size: 12px;
+  padding: 2%;
+  text-align: justify;
+  width: 90%;
+  overflow: auto;
+}
+
+/*Seletor de Tag composto*/
+h1, h2, h3{
+  color: #4b0082;
+  padding: 1%;
+}
+
+/*Seletor de Tag junto com Classe*/
+/*Formatação do menu quando a página carregar*/
+.menu a{
+  background-color: #800080;
+  padding: 2px 5px;
+  border: 1px solid #ee82ee;
+  text-decoration: none;
+  margin-right: 5px;
+  color: #fff;
+}
+
+/*Formatação do menu quando o mouse passar sobre "hover" */
+.menu a:hover{
+  background-color: #9400d3;
+}
+
+/*tabela*/
+.table{
+  width: 80%;
+  background-color: #800000;
+  color: #696969;
+  border-radius: 10px;
+}
+
+thead, tfoot{
+  background-color: #ffa07a;
+}

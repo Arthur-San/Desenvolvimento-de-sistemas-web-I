@@ -1,0 +1,200 @@
+@charset 'utf-8';
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+
+#id_geral{
+    background-color: blueviolet;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#id_topo{
+    background-color: #2d5a95;
+    width: 100%;
+    height: 9%;
+    display: flex;
+}
+
+#id_topoEsquerdo{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:5px;
+    margin-left: 0px;
+    
+}
+#id_logoFacebook{
+    width: 170px;
+    height: 34px;
+    background-position: 0 -196px;
+    font-size: 4.5vh;
+    text-align: center;
+    color: white;
+    margin-right: 110px;
+}
+#id_topoDireito{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+#id_formulario{
+    display: flex;
+    color: white;
+}
+.paragrafo{
+    padding: 5px;
+    font-size: 10px;
+}
+#id_email, #id_senha{
+    font-size: 9px;
+    padding: 2px;
+}
+
+#id_conteudo{
+    background-color: #d3d9e8;
+    width: 100%;
+    height: 69%;
+    display: flex;
+}
+#id_conteudoEsquerdo, #id_conteudoDireito{
+   
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(211, 216, 232))
+}
+#id_conteudoEsquerdo {
+    color: #0e385f;
+    font-weight: bold;
+    font-size: 2vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column; 
+    margin-left: -70px;   
+}
+
+#id_conteudoEsquerdo p {
+    color: #0e385f;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 29px;
+    margin-top: 40px;
+    width: 450px;
+    word-spacing: -1px;
+    margin-left: 240px;
+}
+
+#id_conteudoEsquerdo figure{
+    background-image: url(../img/img1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 537px;
+    height: 195px;
+    margin-left: 240px;
+}
+#id_conteudoDireito{
+    width:50%;
+    height: 100%;
+}
+#conteudo_direito h2 {
+    font-size: 36px;
+    color: #333333;
+    line-height: 1.34;
+    margin: 5px;
+}
+#sub {
+    color: #1d2129;
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+.nome_sobrenome {
+    font-size: 2vh;
+    padding: 8px 10px;
+    border-color: #bdc7d8;
+    border-radius: 5px;
+    position: relative;
+    border: 1px solid #ccd0d5;
+    color: #999999;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+.email_senha {
+    font-size: 2vh;
+    padding: 8px 10px;
+    border-color: #bdc7d8;
+    border-radius: 5px;
+    position: relative;
+    border: 1px solid #ccd0d5;
+    color: #999999;
+    margin-bottom: 10px;
+}
+#data {
+    color: #90949c;
+    font-size: 1.8vh;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+#data_num{
+    font-size: 1.5;
+    padding: 5px;
+    color: #1c1e21;
+    border: 1px solid #ccd0d5;
+    margin-bottom: 10px;
+}
+
+#genero{
+    margin-bottom: 5px;
+    margin-top: 10px;
+    color: #90949c;
+    font-size: 1.8vh;
+    font-weight: bold;
+}
+.genero_form{
+    color: #1d2129;
+    font-size: 2vh;
+    line-height: 18px;
+    padding: 0 10px 0 3px;
+    cursor: default;
+    vertical-align: middle;
+    margin: 20px;
+}
+#cadastrar {
+    font-size: 4vh;
+    background: linear-gradient(#67ae55, #578843);
+    font-weight: bold;
+    margin: 20px;
+    text-align: center;
+    box-shadow: #a4e388;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    width: 200px;
+}
+#id_rodape{
+    background-color: white;
+    width: 100%;
+    height: 22%;
+}
+#id_rodape ul li{
+    display: inline;
+}
+#id_ul1, #id_ul2{
+    padding-left: 200px;
+    padding-top: 5px;
+}
+#mais{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}

@@ -1,0 +1,11 @@
+@charset 'utf-8';
+
+body{
+    background-color: darkgray;
+}
+
+#id_container{
+    width: 100px;
+    height: 100px;
+    background-color: chocolate;
+}

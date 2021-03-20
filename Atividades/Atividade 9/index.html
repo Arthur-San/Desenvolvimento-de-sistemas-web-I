@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>ATIVIDADE 9</title>
+        <link rel="icon" href="img/shyguy.png">
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <header id="topo">
+            <h2>WebSiteName</h2>
+            <button id="btn_menu"><a href="#menu"><i class="fa fa-bars fa-lg"></i></a></button>
+
+        </header>
+        <nav id="menu">
+            <ul>
+                <a href="#"><li>Home</li></a>
+                <a href="#"><li>Page 1</li></a>
+                <a href="#"><li>Page 2</li></a>
+                <a href="#"><li>Page 3</li></a>
+            </ul>
+        </nav>
+        <div id="pai_banner">
+            <section id="banner">
+                <h1>My First Responsive Page</h1>
+                <h2>
+                    Resize this responsive page to see the effect!
+                </h2>
+            </section>
+        </div>
+        <main id="corpo">
+            <div id="textos">
+                <section class="textos">
+                    <h2>
+                        Column 1
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+                    </p>
+                    <p>
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...
+                    </p>
+                </section>
+                <section class="textos">
+                    <h2>
+                        Column 2
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+                    </p>
+                    <p>
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...
+                    </p>
+                </section>
+                <section class="textos">
+                    <h2>
+                        Column 3
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+                    </p>
+                    <p>
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...
+                    </p>
+                </section>
+            </div>
+            <section id="texto_galeria">
+                <h2>Image Gallery</h2>
+                <p>
+                    The .thumbnail class can be used to display an image gallery.
+                </p>
+                <p>
+                    The .caption class adds proper padding and a dark grey color to text inside thumbnails. 
+                </p>
+                <p>
+                    Click on the images to enlarge them.
+                </p>
+            </section>
+            <div id="imgs">
+                <figure>
+                    <img src="img/01.jpg">
+                    <figcaption>
+                        Lorem ipsum donec id elit non mi porta gravida at eget metus.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="img/02.jpg">
+                    <figcaption>
+                        Lorem ipsum donec id elit non mi porta gravida at eget metus.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="img/03.jpg">
+                    <figcaption>
+                        Lorem ipsum donec id elit non mi porta gravida at eget metus.
+                    </figcaption>
+                </figure>
+            </div>
+            <div id="carrocel">
+                <div id="demo" class="carousel slide" data-ride="carousel">
+
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                        <li data-target="#demo" data-slide-to="3"></li>
+                    </ul>
+
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/04.jpg" alt="Imagem4" width="1100" height="500">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/01.jpg" alt="Imagem1" width="1100" height="500">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/02.jpg" alt="Imagem2" width="1100" height="500">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/03.jpg" alt="Imagem3" title="Teste" width="1100" height="500">
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+
+            </div>
+        </main>
+        <footer id="rodape">
+            <section id="texto_rodape">
+                <h2>Input Groups</h2>
+                <p>
+                    The .input-group class is a container to enhance an input by adding an icon, text or a button in front or behind it as a "help text".
+                </p>
+                <p>
+                    The .input-group-addon class attaches an icon or help text next to the input field.
+                </p>
+            </section>
+            <form action="" method="post">
+                <input type="text" name="n_email" placeholder="Email">
+                <input type="password" name="n_password" placeholder="Password">
+                <input type="text" name="n_msg" placeholder="Additional Info">
+                <p id="additional">
+                    It can also be used on the right side of the input:
+                </p>
+                <input type="text" name="n_email2" placeholder="Email">
+                <input type="password" name="n_password2" placeholder="Password">
+                <div id="botoes">
+                    <button>Enviar</button>
+                    <button>Limpar</button>
+                </div>
+            </form>
+        </footer>
+    </body>
+</html>
+
